@@ -80,7 +80,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2025-02-02T20:34:51.7031768Z`, an employee on the "project-threat" device successfully established a connection to the remote IP address `212.132.108.187` on port `443`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\labuser\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a couple of other connections to site(s) over port `9150`.
+Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2025-02-02T20:34:51.7031768Z`, an employee on the "project-threat" device successfully established a connection to the remote IP address `127.0.0.1` on port `9150`. The connection was initiated by the process `firefox.exe`, located in the folder `c:\users\labuser\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a couple of other connections to site(s) over port `443`.
 
 **Query used to locate events:**
 
@@ -134,7 +134,7 @@ DeviceNetworkEvents
 
 - **Timestamps:**
   - `2025-02-02T20:34:51.706405Z` - Connected to `5.181.77.8` on port `443`.
-  - `2025-02-02T20:35:02.6069546Z` - Local connection to `127.0.0.1` on port `9150`.
+  - `2025-02-02T20:34:51.7031768Z` - Connected to `212.132.108.187` on port `443`.
 - **Event:** Additional TOR network connections were established, indicating ongoing activity by user "employee" through the TOR browser.
 - **Action:** Multiple successful connections detected.
 
